@@ -6,9 +6,9 @@ class EN(object):
 # BASICS
 #
 #----------------
-    WELCOME_MSG = "Hello {} Sir"
-    START_DOWNLOAD = "Starting to download..........."
-    ANTI_SPAM_WAIT = "Wait for the current task to complete!"
+    WELCOME_MSG = "Hey {} "
+    START_DOWNLOAD = "trying to download"
+    ANTI_SPAM_WAIT = "already downloading something, wait"
     TASK_COMPLETED = "Download Finished"   
     SONG_COPY_EXIST = 'Song already downloaded exist'
     SONG_COPY_EXIST_INFO = """
@@ -31,19 +31,19 @@ Quality : {}
     ADD_ADMIN_SUCCESS = "Successfully added {} as an admin"
     NO_ID_TO_AUTH = "No ID provided to add!"
     # TIDAL
-    TIDAL_NOT_AUTH = "No Tidal Logins Given."
+    TIDAL_NOT_AUTH = "tidal is disabled by admin"
     TIDAL_AUTH_NEXT_STEP = "Go to {0} within the next {1} to complete tidal authentication."
     TIDAL_AUTH_SUCCESS = "Tidal authentication successful.\n\nIt is now valid for {}"
     TIDAL_ALREADY_AUTH = "Your authentication is already done.\nIts is valid for {}"
     TIDAL_API_KEY_CHANGED = "Successfully updated the API Key to {} - {}"
     # KKBOX
-    KKBOX_NOT_AUTH = "KKBOX account credentials not given or subcription expired"
+    KKBOX_NOT_AUTH = "KKBOX is also not available"
     # DEEZER
     DEEZER_NOT_AUTH = "Deezer credentials not provided"
     # QOBUZ
     QOBUZ_NOT_AUTH = "Qobuz credentials not provided"
     # SPOTIFY
-    SPOTIFY_NOT_AUTH = "Spotify credentials not provided"
+    SPOTIFY_NOT_AUTH = "Spotify is disabled by admin"
 
 
 
@@ -53,19 +53,19 @@ Quality : {}
 #
 #----------------
     ALBUM_TEMPLATE = """
-🎶 <b>Title :</b> {title}
-👤 <b>Artist :</b> {artist}
-📅 <b>Release Date :</b> {date}
-🔢 <b>Total Tracks :</b> {totaltracks}
-📀 <b>Total Volumes :</b> {totalvolume}
-💫 <b>Quality :</b> {quality}
-📡 <b>Provider :</b> {provider}
-🔞 <b>Explicit :</b> {explicit}
+ <b>Title :</b> {title}
+ <b>Artist :</b> {artist}
+ <b>Release Date :</b> {date}
+ <b>Total Tracks :</b> {totaltracks}
+ <b>Total Volumes :</b> {totalvolume}
+ <b>Quality :</b> {quality}
+ <b>Provider :</b> {provider}
+ <b>Explicit :</b> {explicit}
 """
 
     # The caption on the uploaded audio file in Telegram
     # Keep it blank for no captions
-    TRACK_TEMPLATE = "<b>{artist} - {title}</b>"
+    TRACK_TEMPLATE = ""
 
     
 
